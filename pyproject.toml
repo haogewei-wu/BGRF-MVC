@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bgrfmvc"
+version = "2.0.1"
+description = "Boundary-aware granular relation fusion for multi-view clustering"
+requires-python = ">=3.9"
+dependencies = ["numpy>=1.23", "h5py>=3.8", "pandas>=1.5", "PyYAML>=6", "scipy>=1.10", "scikit-learn>=1.2"]
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
