@@ -1,0 +1,702 @@
+# Stage 2 read-only audit manifest. K is never inferred from label values.
+datasets:
+  100leaves__100leaves:
+    enabled: false
+    k_source: null
+    k_source_note: null
+    label_key: truelabel
+    n_clusters: null
+    notes: MATLAB object/cell feature container expanded; sample axis inferred from
+      aligned rows; constant_column_ratio=0; nan_count=0; inf_count=0; n_clusters
+      missing external benchmark source
+    path: datasets-multiview/100leaves/100leaves.mat
+    transpose_views: false
+    view_keys: [data]
+  ALOI-100__Consensus One-step Multi-view Subspace Clustering__ALOI-100:
+    enabled: false
+    k_source: null
+    k_source_note: null
+    label_key: Y
+    n_clusters: null
+    notes: MATLAB object/cell feature container expanded; sample axis inferred from
+      aligned rows; constant_column_ratio=0; nan_count=0; inf_count=0; n_clusters
+      missing external benchmark source
+    path: datasets-multiview/ALOI-100/Consensus One-step Multi-view Subspace Clustering/ALOI-100.mat
+    transpose_views: false
+    view_keys: [X]
+  BBC__Multi-view Clustering via Concept Factorization with Local Manifold Fegularization__BBC4view_685:
+    enabled: false
+    k_source: null
+    k_source_note: null
+    label_key: truelabel
+    n_clusters: null
+    notes: MATLAB object/cell feature container expanded; sparse feature view convertible
+      to dense; transpose required; sample axis inferred from aligned columns; constant_column_ratio=0.068451263;
+      nan_count=0; inf_count=0; n_clusters missing external benchmark source
+    path: datasets-multiview/BBC/Multi-view Clustering via Concept Factorization with
+      Local Manifold Fegularization/BBC4view_685.mat
+    transpose_views: true
+    view_keys: [data]
+  BBCsport__Consensus One-step Multi-view Subspace Clustering__bbcsport_seg14of4:
+    enabled: false
+    k_source: null
+    k_source_note: null
+    label_key: Y
+    n_clusters: null
+    notes: MATLAB object/cell feature container expanded; sample axis inferred from
+      aligned rows; constant_column_ratio=0.16132132; nan_count=0; inf_count=0; n_clusters
+      missing external benchmark source
+    path: datasets-multiview/BBCsport/Consensus One-step Multi-view Subspace Clustering/bbcsport_seg14of4.mat
+    transpose_views: false
+    view_keys: [X]
+  BBCsport__Essential Tensor Learning for Multi-view Spectral Clustering__bbcsport_2view:
+    enabled: false
+    k_source: null
+    k_source_note: null
+    label_key: truth
+    n_clusters: null
+    notes: MATLAB object/cell feature container expanded; sparse feature view convertible
+      to dense; sample axis inferred from aligned rows; constant_column_ratio=0.0028186658;
+      nan_count=0; inf_count=0; n_clusters missing external benchmark source
+    path: datasets-multiview/BBCsport/Essential Tensor Learning for Multi-view Spectral
+      Clustering/bbcsport_2view.mat
+    transpose_views: false
+    view_keys: [data]
+  BBCsport__Feature Concatenation Multi-view Subspace Clustering__bbcsport_2view:
+    enabled: false
+    k_source: null
+    k_source_note: null
+    label_key: truth
+    n_clusters: null
+    notes: MATLAB object/cell feature container expanded; sparse feature view convertible
+      to dense; sample axis inferred from aligned rows; constant_column_ratio=0.0028186658;
+      nan_count=0; inf_count=0; n_clusters missing external benchmark source
+    path: datasets-multiview/BBCsport/Feature Concatenation Multi-view Subspace Clustering/bbcsport_2view.mat
+    transpose_views: false
+    view_keys: [data]
+  BBCsport__Multi-view Clustering via Concept Factorization with Local Manifold Fegularization__BBCSport2view_544:
+    enabled: false
+    k_source: null
+    k_source_note: null
+    label_key: truelabel
+    n_clusters: null
+    notes: MATLAB object/cell feature container expanded; sparse feature view convertible
+      to dense; transpose required; sample axis inferred from aligned columns; constant_column_ratio=0.0028186658;
+      nan_count=0; inf_count=0; n_clusters missing external benchmark source
+    path: datasets-multiview/BBCsport/Multi-view Clustering via Concept Factorization
+      with Local Manifold Fegularization/BBCSport2view_544.mat
+    transpose_views: true
+    view_keys: [data]
+  BBCsport__Multi-view spectral clustering via integrating nonnegative embedding and spectral embedding__bbcsport:
+    enabled: false
+    k_source: null
+    k_source_note: null
+    label_key: Y
+    n_clusters: null
+    notes: MATLAB object/cell feature container expanded; sparse feature view convertible
+      to dense; sample axis inferred from aligned rows; constant_column_ratio=0.0028186658;
+      nan_count=0; inf_count=0; n_clusters missing external benchmark source
+    path: datasets-multiview/BBCsport/Multi-view spectral clustering via integrating
+      nonnegative embedding and spectral embedding/bbcsport.mat
+    transpose_views: false
+    view_keys: [X]
+  BDGP__Consensus One-step Multi-view Subspace Clustering__BDGP_fea:
+    enabled: false
+    k_source: null
+    k_source_note: null
+    label_key: Y
+    n_clusters: null
+    notes: MATLAB object/cell feature container expanded; non-2D feature view; view
+      is not two-dimensional; nan_count=None; inf_count=None; views not sample-aligned;
+      fewer than two aligned samples; n_clusters missing external benchmark source
+    path: datasets-multiview/BDGP/Consensus One-step Multi-view Subspace Clustering/BDGP_fea.mat
+    transpose_views: false
+    view_keys: [X, view_meaning]
+  CCV__Consensus One-step Multi-view Subspace Clustering__CCV:
+    enabled: false
+    k_source: null
+    k_source_note: null
+    label_key: Y
+    n_clusters: null
+    notes: MATLAB object/cell feature container expanded; sample axis inferred from
+      aligned rows; constant_column_ratio=0; nan_count=0; inf_count=0; n_clusters
+      missing external benchmark source
+    path: datasets-multiview/CCV/Consensus One-step Multi-view Subspace Clustering/CCV.mat
+    transpose_views: false
+    view_keys: [X]
+  COIL20__Essential Tensor Learning for Multi-view Spectral Clustering__COIL20_3VIEWS:
+    enabled: false
+    k_source: null
+    k_source_note: null
+    label_key: Y
+    n_clusters: null
+    notes: sample axis inferred from aligned rows; constant_column_ratio=0; nan_count=0;
+      inf_count=0; n_clusters missing external benchmark source
+    path: datasets-multiview/COIL20/Essential Tensor Learning for Multi-view Spectral
+      Clustering/COIL20_3VIEWS.mat
+    transpose_views: false
+    view_keys: [X1, X2, X3, X4]
+  Caltech101-20__2019-ICML-COMIC-master__COMIC-release__data__Caltech101-20:
+    enabled: false
+    k_source: null
+    k_source_note: null
+    label_key: null
+    n_clusters: null
+    notes: 'parse/read blocked: Expecting matrix here'
+    path: datasets-multiview/Caltech101-20/2019-ICML-COMIC-master/COMIC-release/data/Caltech101-20.mat
+    transpose_views: false
+    view_keys: []
+  Caltech101-20__Consensus One-step Multi-view Subspace Clustering__Caltech101-20:
+    enabled: false
+    k_source: null
+    k_source_note: null
+    label_key: Y
+    n_clusters: null
+    notes: MATLAB object/cell feature container expanded; non-2D feature view; view
+      is not two-dimensional; nan_count=None; inf_count=None; views not sample-aligned;
+      fewer than two aligned samples; n_clusters missing external benchmark source
+    path: datasets-multiview/Caltech101-20/Consensus One-step Multi-view Subspace
+      Clustering/Caltech101-20.mat
+    transpose_views: false
+    view_keys: [X, categories, cateset, datasetname, feanames]
+  Caltech101-Datasets__Anchor_Caltech101:
+    enabled: false
+    k_source: null
+    k_source_note: null
+    label_key: null
+    n_clusters: null
+    notes: MATLAB object/cell feature container expanded; sample axis inferred from
+      aligned rows; constant_column_ratio=0; nan_count=0; inf_count=0; n_clusters
+      missing external benchmark source
+    path: datasets-multiview/Caltech101-Datasets/Anchor_Caltech101.mat
+    transpose_views: false
+    view_keys: [Anchor]
+  Caltech101-Datasets__Caltech101-all:
+    enabled: false
+    k_source: null
+    k_source_note: null
+    label_key: Y
+    n_clusters: null
+    notes: MATLAB object/cell feature container expanded; non-2D feature view; view
+      is not two-dimensional; nan_count=None; inf_count=None; views not sample-aligned;
+      fewer than two aligned samples; n_clusters missing external benchmark source
+    path: datasets-multiview/Caltech101-Datasets/Caltech101-all.mat
+    transpose_views: false
+    view_keys: [categories, feanames, X]
+  Caltech101-Datasets__Consensus One-step Multi-view Subspace Clustering__Caltech101-all_fea:
+    enabled: false
+    k_source: null
+    k_source_note: null
+    label_key: Y
+    n_clusters: null
+    notes: MATLAB object/cell feature container expanded; non-2D feature view; view
+      is not two-dimensional; nan_count=None; inf_count=None; views not sample-aligned;
+      fewer than two aligned samples; n_clusters missing external benchmark source
+    path: datasets-multiview/Caltech101-Datasets/Consensus One-step Multi-view Subspace
+      Clustering/Caltech101-all_fea.mat
+    transpose_views: false
+    view_keys: [X, categories, cateset, feanames, view_meaning]
+  Caltech101-Datasets__Low-Rank Tensor Based Proximity Learning__Caltech101-7:
+    enabled: false
+    k_source: null
+    k_source_note: null
+    label_key: Y
+    n_clusters: null
+    notes: MATLAB object/cell feature container expanded; non-2D feature view; view
+      is not two-dimensional; nan_count=None; inf_count=None; views not sample-aligned;
+      fewer than two aligned samples; n_clusters missing external benchmark source
+    path: datasets-multiview/Caltech101-Datasets/Low-Rank Tensor Based Proximity Learning/Caltech101-7.mat
+    transpose_views: false
+    view_keys: [X, categories, cateset, feanames]
+  Caltech101-Datasets__caltech_vgg16:
+    enabled: false
+    k_source: null
+    k_source_note: null
+    label_key: null
+    n_clusters: null
+    notes: sample axis inferred from aligned rows; constant_column_ratio=0.012448133;
+      nan_count=0; inf_count=0; n_clusters missing external benchmark source
+    path: datasets-multiview/Caltech101-Datasets/caltech_vgg16.mat
+    transpose_views: false
+    view_keys: [data]
+  Caltech101-Datasets__caltech_vgg19:
+    enabled: false
+    k_source: null
+    k_source_note: null
+    label_key: null
+    n_clusters: null
+    notes: sample axis inferred from aligned rows; constant_column_ratio=0.0039052966;
+      nan_count=0; inf_count=0; n_clusters missing external benchmark source
+    path: datasets-multiview/Caltech101-Datasets/caltech_vgg19.mat
+    transpose_views: false
+    view_keys: [data]
+  EYaleB10__Multi-View Spectral Clustering Tailored Tensor Low-Rank Representation__EYaleB10_mtv:
+    enabled: false
+    k_source: null
+    k_source_note: null
+    label_key: gt
+    n_clusters: null
+    notes: MATLAB object/cell feature container expanded; transpose required; sample
+      axis inferred from aligned columns; constant_column_ratio=0; nan_count=0; inf_count=0;
+      n_clusters missing external benchmark source
+    path: datasets-multiview/EYaleB10/Multi-View Spectral Clustering Tailored Tensor
+      Low-Rank Representation/EYaleB10_mtv.mat
+    transpose_views: true
+    view_keys: [X]
+  Fashion-MNIST__fashion_MNIST_2000:
+    enabled: false
+    k_source: null
+    k_source_note: null
+    label_key: groundtruth
+    n_clusters: null
+    notes: MATLAB object/cell feature container expanded; sample axis inferred from
+      aligned rows; constant_column_ratio=0.069515306; nan_count=0; inf_count=0; n_clusters
+      missing external benchmark source
+    path: datasets-multiview/Fashion-MNIST/fashion_MNIST_2000.mat
+    transpose_views: false
+    view_keys: [X]
+  Flowers__Robust Graph-based Multi-view Clustering__flower17_Kmatrix:
+    enabled: false
+    k_source: null
+    k_source_note: null
+    label_key: Y
+    n_clusters: null
+    notes: sample axis inferred from aligned rows; constant_column_ratio=0; nan_count=0;
+      inf_count=0; n_clusters missing external benchmark source
+    path: datasets-multiview/Flowers/Robust Graph-based Multi-view Clustering/flower17_Kmatrix.mat
+    transpose_views: false
+    view_keys: [KH]
+  Handwritten__Consensus One-step Multi-view Subspace Clustering__Handwritten_numerals:
+    enabled: true
+    k_source: Multi-view clustering algorithm based on bipartite graph and consensus graph learning
+    k_source_note: Published benchmark table reports Handwritten with 2000 samples, 6 views, and 10 clusters; local X metadata matches all six dimensions 240, 76, 216, 47, 64, and 6.
+    k_verification: external_publication
+    k_verified_without_labels: true
+    label_key: Y
+    n_clusters: 10
+    notes: MATLAB object/cell feature container expanded; sample axis inferred from
+      aligned rows; constant_column_ratio=0; nan_count=0; inf_count=0; K externally
+      frozen from publication registry without reading label values
+    path: datasets-multiview/Handwritten/Consensus One-step Multi-view Subspace Clustering/Handwritten_numerals.mat
+    transpose_views: false
+    view_keys: [X]
+  ? Handwritten__Feature extraction via multi-view non-negative matrix factorization
+    with local graph regularization__handwritten
+  : enabled: false
+    k_source: null
+    k_source_note: null
+    label_key: gnd
+    n_clusters: null
+    notes: sample axis inferred from aligned rows; constant_column_ratio=0; nan_count=0;
+      inf_count=0; n_clusters missing external benchmark source
+    path: datasets-multiview/Handwritten/Feature extraction via multi-view non-negative
+      matrix factorization with local graph regularization/handwritten.mat
+    transpose_views: false
+    view_keys: [fourier, pixel, profile, zer, mor]
+  Handwritten__Multi-View Clustering via Joint Nonnegative Matrix Factorization__handwritten:
+    enabled: false
+    k_source: null
+    k_source_note: null
+    label_key: gnd
+    n_clusters: null
+    notes: sample axis inferred from aligned rows; constant_column_ratio=0; nan_count=0;
+      inf_count=0; n_clusters missing external benchmark source
+    path: datasets-multiview/Handwritten/Multi-View Clustering via Joint Nonnegative
+      Matrix Factorization/handwritten.mat
+    transpose_views: false
+    view_keys: [fourier, pixel, profile, zer, mor]
+  Hdigit__2022 Low-Rank Tensor Based Proximity Learning for Multi-View Clustering__Hdigit:
+    enabled: false
+    k_source: null
+    k_source_note: null
+    label_key: gt
+    n_clusters: null
+    notes: MATLAB object/cell feature container expanded; transpose required; sample
+      axis inferred from aligned columns; constant_column_ratio=0.10673077; nan_count=0;
+      inf_count=0; n_clusters missing external benchmark source
+    path: datasets-multiview/Hdigit/2022 Low-Rank Tensor Based Proximity Learning
+      for Multi-View Clustering/Hdigit.mat
+    transpose_views: true
+    view_keys: [X]
+  MSRC__Consensus One-step Multi-view Subspace Clustering__MSRCV1:
+    enabled: true
+    k_source: Multi-view clustering algorithm based on bipartite graph and consensus graph learning
+    k_source_note: Published benchmark table reports MSRC_v1 with 210 samples, 6 views, and 7 clusters; local X metadata exactly matches dimensions 1302, 48, 512, 100, 256, and 210.
+    k_verification: external_publication
+    k_verified_without_labels: true
+    label_key: Y
+    n_clusters: 7
+    notes: MATLAB object/cell feature container expanded; sample axis inferred from
+      aligned rows; constant_column_ratio=0; nan_count=0; inf_count=0; K externally
+      frozen from publication registry without reading label values
+    path: datasets-multiview/MSRC/Consensus One-step Multi-view Subspace Clustering/MSRCV1.mat
+    transpose_views: false
+    view_keys: [X]
+  MSRC__Multi-View Clustering in Latent Embedding Space__MSRC-v1:
+    enabled: false
+    k_source: null
+    k_source_note: null
+    label_key: Y
+    n_clusters: null
+    notes: MATLAB object/cell feature container expanded; sample axis inferred from
+      aligned rows; constant_column_ratio=0; nan_count=0; inf_count=0; n_clusters
+      missing external benchmark source
+    path: datasets-multiview/MSRC/Multi-View Clustering in Latent Embedding Space/MSRC-v1.mat
+    transpose_views: false
+    view_keys: [X]
+  NGs__Comprehensive Multi-view Representation Learning__my_NGs:
+    enabled: false
+    k_source: null
+    k_source_note: null
+    label_key: gt
+    n_clusters: null
+    notes: sample axis inferred from aligned rows; constant_column_ratio=0; nan_count=0;
+      inf_count=0; n_clusters missing external benchmark source
+    path: datasets-multiview/NGs/Comprehensive Multi-view Representation Learning/my_NGs.mat
+    transpose_views: false
+    view_keys: [X1, X2, X3]
+  NUS__Multi-view spectral clustering via integrating nonnegative embedding and spectral embedding__NUS:
+    enabled: false
+    k_source: null
+    k_source_note: null
+    label_key: Y
+    n_clusters: null
+    notes: MATLAB object/cell feature container expanded; sample axis inferred from
+      aligned rows; constant_column_ratio=0; nan_count=0; inf_count=0; n_clusters
+      missing external benchmark source
+    path: datasets-multiview/NUS/Multi-view spectral clustering via integrating nonnegative
+      embedding and spectral embedding/NUS.mat
+    transpose_views: false
+    view_keys: [X]
+  Newsgroups__Multi-view Clustering via Concept Factorization with Local Manifold Fegularization__20newsgroups:
+    enabled: false
+    k_source: null
+    k_source_note: null
+    label_key: truelabel
+    n_clusters: null
+    notes: MATLAB object/cell feature container expanded; sample axis inferred from
+      aligned rows; constant_column_ratio=0; nan_count=0; inf_count=0; n_clusters
+      missing external benchmark source
+    path: datasets-multiview/Newsgroups/Multi-view Clustering via Concept Factorization
+      with Local Manifold Fegularization/20newsgroups.mat
+    transpose_views: false
+    view_keys: [data]
+  Notting-Hill__Low-Rank Tensor Based Proximity Learning for Multi-View Clustering__Notting-Hill:
+    enabled: false
+    k_source: null
+    k_source_note: null
+    label_key: Y
+    n_clusters: null
+    notes: MATLAB object/cell feature container expanded; sample axis inferred from
+      aligned rows; constant_column_ratio=0; nan_count=0; inf_count=0; n_clusters
+      missing external benchmark source
+    path: datasets-multiview/Notting-Hill/Low-Rank Tensor Based Proximity Learning
+      for Multi-View Clustering/Notting-Hill.mat
+    transpose_views: false
+    view_keys: [X]
+  ORL__Consensus One-step Multi-view Subspace Clustering__ORL_mtv:
+    enabled: false
+    k_source: null
+    k_source_note: null
+    label_key: Y
+    n_clusters: null
+    notes: MATLAB object/cell feature container expanded; sample axis inferred from
+      aligned rows; constant_column_ratio=0; nan_count=0; inf_count=0; n_clusters
+      missing external benchmark source
+    path: datasets-multiview/ORL/Consensus One-step Multi-view Subspace Clustering/ORL_mtv.mat
+    transpose_views: false
+    view_keys: [X]
+  ORL__Multi-view spectral clustering via integrating nonnegative embedding and spectral embedding__ORL:
+    enabled: false
+    k_source: null
+    k_source_note: null
+    label_key: Y
+    n_clusters: null
+    notes: MATLAB object/cell feature container expanded; sample axis inferred from
+      aligned rows; constant_column_ratio=0; nan_count=0; inf_count=0; n_clusters
+      missing external benchmark source
+    path: datasets-multiview/ORL/Multi-view spectral clustering via integrating nonnegative
+      embedding and spectral embedding/ORL.mat
+    transpose_views: false
+    view_keys: [X]
+  Raw_features__Multi-View Clustering via Joint Nonnegative Matrix Factorization__raw_features:
+    enabled: false
+    k_source: null
+    k_source_note: null
+    label_key: null
+    n_clusters: null
+    notes: unaligned view sample dimensions; constant_column_ratio=0; nan_count=0;
+      inf_count=0; views not sample-aligned; fewer than two aligned samples; n_clusters
+      missing external benchmark source
+    path: datasets-multiview/Raw_features/Multi-View Clustering via Joint Nonnegative
+      Matrix Factorization/raw_features.mat
+    transpose_views: false
+    view_keys: [I_tr, I_te, T_tr, T_te]
+  Reuters__2020 Joint representation learning for multi-view subspace clustering__reutersMulSubset:
+    enabled: false
+    k_source: null
+    k_source_note: null
+    label_key: GND
+    n_clusters: null
+    notes: sparse feature view convertible to dense; sample axis inferred from aligned
+      rows; constant_column_ratio=0; nan_count=0; inf_count=0; n_clusters missing
+      external benchmark source
+    path: datasets-multiview/Reuters/2020 Joint representation learning for multi-view
+      subspace clustering/reutersMulSubset.mat
+    transpose_views: false
+    view_keys: [Fr, En, Gr]
+  SUNRGBD__Consensus One-step Multi-view Subspace Clustering__SUNRGBD_fea:
+    enabled: false
+    k_source: null
+    k_source_note: null
+    label_key: Y
+    n_clusters: null
+    notes: MATLAB object/cell feature container expanded; non-2D feature view; view
+      is not two-dimensional; nan_count=None; inf_count=None; views not sample-aligned;
+      fewer than two aligned samples; n_clusters missing external benchmark source
+    path: datasets-multiview/SUNRGBD/Consensus One-step Multi-view Subspace Clustering/SUNRGBD_fea.mat
+    transpose_views: false
+    view_keys: [X, view_meaning]
+  Scene__Multi-view spectral clustering via integrating nonnegative embedding and spectral embedding__scene:
+    enabled: false
+    k_source: null
+    k_source_note: null
+    label_key: Y
+    n_clusters: null
+    notes: MATLAB object/cell feature container expanded; sample axis inferred from
+      aligned rows; constant_column_ratio=0; nan_count=0; inf_count=0; n_clusters
+      missing external benchmark source
+    path: datasets-multiview/Scene/Multi-view spectral clustering via integrating
+      nonnegative embedding and spectral embedding/scene.mat
+    transpose_views: false
+    view_keys: [X]
+  ? Scene__Robust Kernelized Multi-View Self-Representations for Clustering by Tensor
+    Multi-Rank Minimization yaleB scene15__scene15
+  : enabled: false
+    k_source: null
+    k_source_note: null
+    label_key: gt
+    n_clusters: null
+    notes: transpose required; sample axis inferred from aligned columns; constant_column_ratio=0;
+      nan_count=0; inf_count=0; n_clusters missing external benchmark source
+    path: datasets-multiview/Scene/Robust Kernelized Multi-View Self-Representations
+      for Clustering by Tensor Multi-Rank Minimization yaleB scene15/scene15.mat
+    transpose_views: true
+    view_keys: [X1, X2, X3]
+  Sources__Consensus One-step Multi-view Subspace Clustering__3sources:
+    enabled: true
+    k_source: Multi-view clustering algorithm based on bipartite graph and consensus graph learning
+    k_source_note: Published benchmark table reports 3sources with 169 samples, 3 views, and 6 clusters; local X metadata exactly matches dimensions 3560, 3631, and 3068.
+    k_verification: external_publication
+    k_verified_without_labels: true
+    label_key: Y
+    n_clusters: 6
+    notes: MATLAB object/cell feature container expanded; sparse feature view convertible
+      to dense; sample axis inferred from aligned rows; constant_column_ratio=0.030704747;
+      nan_count=0; inf_count=0; K externally frozen from publication registry without
+      reading label values
+    path: datasets-multiview/Sources/Consensus One-step Multi-view Subspace Clustering/3sources.mat
+    transpose_views: false
+    view_keys: [X]
+  Sources__Multi-view Clustering via Concept Factorization with Local Manifold Fegularization__3sources:
+    enabled: false
+    k_source: null
+    k_source_note: null
+    label_key: truelabel
+    n_clusters: null
+    notes: MATLAB object/cell feature container expanded; transpose required; sample
+      axis inferred from aligned columns; constant_column_ratio=0.030704747; nan_count=0;
+      inf_count=0; n_clusters missing external benchmark source
+    path: datasets-multiview/Sources/Multi-view Clustering via Concept Factorization
+      with Local Manifold Fegularization/3sources.mat
+    transpose_views: true
+    view_keys: [data]
+  Synth__Essential Tensor Learning for Multi-view Spectral Clustering__synth3views_2clusters:
+    enabled: false
+    k_source: null
+    k_source_note: null
+    label_key: truth
+    n_clusters: null
+    notes: sample axis inferred from aligned rows; constant_column_ratio=0; nan_count=0;
+      inf_count=0; n_clusters missing external benchmark source
+    path: datasets-multiview/Synth/Essential Tensor Learning for Multi-view Spectral
+      Clustering/synth3views_2clusters.mat
+    transpose_views: false
+    view_keys: [X1, X2, X3]
+  Synth__Multi-View Clustering via Joint Nonnegative Matrix Factorization__synth3views_2clusters:
+    enabled: false
+    k_source: null
+    k_source_note: null
+    label_key: truth
+    n_clusters: null
+    notes: sample axis inferred from aligned rows; constant_column_ratio=0; nan_count=0;
+      inf_count=0; n_clusters missing external benchmark source
+    path: datasets-multiview/Synth/Multi-View Clustering via Joint Nonnegative Matrix
+      Factorization/synth3views_2clusters.mat
+    transpose_views: false
+    view_keys: [X1, X2, X3]
+  UCI__Essential Tensor Learning for Multi-view Spectral Clustering__UCI_3view:
+    enabled: false
+    k_source: null
+    k_source_note: null
+    label_key: truth
+    n_clusters: null
+    notes: MATLAB object/cell feature container expanded; sample axis inferred from
+      aligned rows; constant_column_ratio=0; nan_count=0; inf_count=0; n_clusters
+      missing external benchmark source
+    path: datasets-multiview/UCI/Essential Tensor Learning for Multi-view Spectral
+      Clustering/UCI_3view.mat
+    transpose_views: false
+    view_keys: [data]
+  WebKB__Consensus One-step Multi-view Subspace Clustering__WebKB_2views:
+    enabled: false
+    k_source: null
+    k_source_note: null
+    label_key: Y
+    n_clusters: null
+    notes: MATLAB object/cell feature container expanded; sample axis inferred from
+      aligned rows; constant_column_ratio=0; nan_count=0; inf_count=0; n_clusters
+      missing external benchmark source
+    path: datasets-multiview/WebKB/Consensus One-step Multi-view Subspace Clustering/WebKB_2views.mat
+    transpose_views: false
+    view_keys: [X]
+  WebKB__Consensus One-step Multi-view Subspace Clustering__WebKB_cor2views_cornell:
+    enabled: false
+    k_source: null
+    k_source_note: null
+    label_key: Y
+    n_clusters: null
+    notes: MATLAB object/cell feature container expanded; sample axis inferred from
+      aligned rows; constant_column_ratio=0.060590095; nan_count=0; inf_count=0; n_clusters
+      missing external benchmark source
+    path: datasets-multiview/WebKB/Consensus One-step Multi-view Subspace Clustering/WebKB_cor2views_cornell.mat
+    transpose_views: false
+    view_keys: [X]
+  WikipediaArticles__Consensus One-step Multi-view Subspace Clustering__Wiki_fea:
+    enabled: false
+    k_source: null
+    k_source_note: null
+    label_key: Y
+    n_clusters: null
+    notes: MATLAB object/cell feature container expanded; non-2D feature view; view
+      is not two-dimensional; nan_count=None; inf_count=None; views not sample-aligned;
+      fewer than two aligned samples; n_clusters missing external benchmark source
+    path: datasets-multiview/WikipediaArticles/Consensus One-step Multi-view Subspace
+      Clustering/Wiki_fea.mat
+    transpose_views: false
+    view_keys: [X, view_meaning]
+  WikipediaArticles__Consensus One-step Multi-view Subspace Clustering__WikipediaArticles:
+    enabled: false
+    k_source: null
+    k_source_note: null
+    label_key: Y
+    n_clusters: null
+    notes: MATLAB object/cell feature container expanded; sample axis inferred from
+      aligned rows; constant_column_ratio=0; nan_count=0; inf_count=0; n_clusters
+      missing external benchmark source
+    path: datasets-multiview/WikipediaArticles/Consensus One-step Multi-view Subspace
+      Clustering/WikipediaArticles.mat
+    transpose_views: false
+    view_keys: [X]
+  WikipediaArticles__Multi-view Clustering via Concept Factorization with Local Manifold Fegularization__WikipediaArticles:
+    enabled: false
+    k_source: null
+    k_source_note: null
+    label_key: truelabel
+    n_clusters: null
+    notes: MATLAB object/cell feature container expanded; transpose required; sample
+      axis inferred from aligned columns; constant_column_ratio=0; nan_count=0; inf_count=0;
+      n_clusters missing external benchmark source
+    path: datasets-multiview/WikipediaArticles/Multi-view Clustering via Concept Factorization
+      with Local Manifold Fegularization/WikipediaArticles.mat
+    transpose_views: true
+    view_keys: [data]
+  YaleA__Consensus One-step Multi-view Subspace Clustering__yaleA_3view:
+    enabled: false
+    k_source: null
+    k_source_note: null
+    label_key: Y
+    n_clusters: null
+    notes: MATLAB object/cell feature container expanded; sample axis inferred from
+      aligned rows; constant_column_ratio=0; nan_count=0; inf_count=0; n_clusters
+      missing external benchmark source
+    path: datasets-multiview/YaleA/Consensus One-step Multi-view Subspace Clustering/yaleA_3view.mat
+    transpose_views: false
+    view_keys: [X]
+  YaleB__Multi-View Spectral Clustering Tailored Tensor Low-Rank Representation__YaleB_IJCV:
+    enabled: false
+    k_source: null
+    k_source_note: null
+    label_key: null
+    n_clusters: null
+    notes: MATLAB object/cell feature container expanded; sample axis inferred from
+      aligned rows; constant_column_ratio=0; nan_count=0; inf_count=0; n_clusters
+      missing external benchmark source
+    path: datasets-multiview/YaleB/Multi-View Spectral Clustering Tailored Tensor
+      Low-Rank Representation/YaleB_IJCV.mat
+    transpose_views: false
+    view_keys: [Z]
+  ? YaleB__Robust Kernelized Multi-View Self-Representations for Clustering by Tensor
+    Multi-Rank Minimization yaleB scene15__yaleB
+  : enabled: false
+    k_source: null
+    k_source_note: null
+    label_key: gt
+    n_clusters: null
+    notes: transpose required; sample axis inferred from aligned columns; constant_column_ratio=0;
+      nan_count=0; inf_count=0; n_clusters missing external benchmark source
+    path: datasets-multiview/YaleB/Robust Kernelized Multi-View Self-Representations
+      for Clustering by Tensor Multi-Rank Minimization yaleB scene15/yaleB.mat
+    transpose_views: true
+    view_keys: [X1, X2, X3]
+  Yale__Essential Tensor Learning for Multi-view Spectral Clustering__yale_mtv:
+    enabled: false
+    k_source: null
+    k_source_note: null
+    label_key: gt
+    n_clusters: null
+    notes: transpose required; sample axis inferred from aligned columns; constant_column_ratio=0.00021201413;
+      nan_count=0; inf_count=0; n_clusters missing external benchmark source
+    path: datasets-multiview/Yale/Essential Tensor Learning for Multi-view Spectral
+      Clustering/yale_mtv.mat
+    transpose_views: true
+    view_keys: [X1, X2, X3]
+  entendyaleb__Tensor Low-rank Representation for Data Recovery and Clustering__extendyaleb:
+    enabled: false
+    k_source: null
+    k_source_note: null
+    label_key: label
+    n_clusters: null
+    notes: non-2D feature view; view is not two-dimensional; nan_count=None; inf_count=None;
+      views not sample-aligned; fewer than two aligned samples; n_clusters missing
+      external benchmark source
+    path: datasets-multiview/entendyaleb/Tensor Low-rank Representation for Data Recovery
+      and Clustering/extendyaleb.mat
+    transpose_views: false
+    view_keys: [X]
+  frdue__Tensor Low-Rank Sparse Representation for Tensor Subspace Learning__T_frdue:
+    enabled: false
+    k_source: null
+    k_source_note: null
+    label_key: label
+    n_clusters: null
+    notes: non-2D feature view; view is not two-dimensional; nan_count=None; inf_count=None;
+      views not sample-aligned; fewer than two aligned samples; n_clusters missing
+      external benchmark source
+    path: datasets-multiview/frdue/Tensor Low-Rank Sparse Representation for Tensor
+      Subspace Learning/T_frdue.mat
+    transpose_views: false
+    view_keys: [X]
+  frdue__Tensor Low-Rank Sparse Representation for Tensor Subspace Learning__T_frdue100:
+    enabled: false
+    k_source: null
+    k_source_note: null
+    label_key: label
+    n_clusters: null
+    notes: non-2D feature view; view is not two-dimensional; nan_count=None; inf_count=None;
+      views not sample-aligned; fewer than two aligned samples; n_clusters missing
+      external benchmark source
+    path: datasets-multiview/frdue/Tensor Low-Rank Sparse Representation for Tensor
+      Subspace Learning/T_frdue100.mat
+    transpose_views: false
+    view_keys: [X]

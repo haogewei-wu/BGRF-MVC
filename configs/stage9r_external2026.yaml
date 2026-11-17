@@ -1,0 +1,60 @@
+datasets:
+  100leaves:
+    k_source: official 2026 repository/paper benchmark metadata
+    n_clusters: 100
+    n_samples: 1600
+    n_views: 3
+    path: external_baselines\GDR\original\Data\100leaves_data.mat
+    view_dimensions: [64, 64, 64]
+  ALOI:
+    k_source: official 2026 repository/paper benchmark metadata
+    n_clusters: 100
+    n_samples: 10800
+    n_views: 4
+    path: external_baselines\GDR\original\Data\ALOI_data.mat
+    view_dimensions: [77, 13, 64, 125]
+  BBC4view:
+    k_source: official 2026 repository/paper benchmark metadata
+    n_clusters: 5
+    n_samples: 685
+    n_views: 4
+    path: external_baselines\MISCC\original\demo\data\BBC4view_685.mat
+    view_dimensions: [4659, 4633, 4665, 4684]
+  Caltech-5V:
+    k_source: official 2026 repository/paper benchmark metadata
+    n_clusters: 7
+    n_samples: 1400
+    n_views: 5
+    path: external_baselines\DRCFMVC\original\unpacked\DRCFMVC\data\Caltech-5V.mat
+    view_dimensions: [40, 254, 1984, 512, 928]
+  Dermatology:
+    k_source: official 2026 repository/paper benchmark metadata
+    n_clusters: 6
+    n_samples: 358
+    n_views: 2
+    path: external_baselines\GDR\original\Data\Dermatology_data.mat
+    view_dimensions: [12, 22]
+  Digit4k:
+    k_source: official 2026 repository/paper benchmark metadata
+    n_clusters: 10
+    n_samples: 4000
+    n_views: 2
+    path: external_baselines\GDR\original\Data\Digit4k_data.mat
+    view_dimensions: [30, 30]
+  LandUse21:
+    k_source: official 2026 repository/paper benchmark metadata
+    n_clusters: 21
+    n_samples: 2100
+    n_views: 3
+    path: external_baselines\CorreGen\original\dataset\LandUse_21.mat
+    view_dimensions: [20, 59, 40]
+  MSRC_v1:
+    k_source: official 2026 repository/paper benchmark metadata
+    n_clusters: 7
+    n_samples: 210
+    n_views: 5
+    path: external_baselines\GDR\original\Data\MSRC_v1_data.mat
+    view_dimensions: [24, 576, 512, 256, 254]
+labels_used_for_selection: false
+selection_hash: da48a8117ffe272c90aa92700971f978332c4db21be954a73e6c7363efa06bb1
+track: External2026

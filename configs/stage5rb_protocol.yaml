@@ -1,0 +1,91 @@
+protocol:
+  name: "Stage 5R-B weighting mechanism recovery"
+  revision_basis: "Stage 5R-A label-free structural diagnostics"
+  status: frozen_not_executed
+  labels_used_for_revision: false
+
+granulation:
+  eta: 0.02
+  min_parent_size: 20
+  min_child_size: 10
+  max_depth: 20
+  further_search_allowed: false
+
+structural_validity:
+  valid_view_rule: "ball_count > 1"
+  weighting_evaluable_rule: "valid_view_count >= 2"
+  datasets:
+    3sources:
+      ball_counts: [1, 1, 1]
+      valid_view_count: 0
+      weighting_evaluable: false
+      classification: CANDIDATE_SPLITTER_DEGENERACY
+      gate_role: STRUCTURAL_FAILURE_CASE
+    MSRCV1:
+      ball_counts: [11, 7, 14, 9, 12, 5]
+      valid_view_count: 6
+      weighting_evaluable: true
+      gate_role: primary
+    Handwritten_numerals:
+      ball_counts: [105, 116, 119, 75, 120, 112]
+      valid_view_count: 6
+      weighting_evaluable: true
+      gate_role: primary
+
+relation_degeneration:
+  required_fields:
+    - feature_variance_per_dimension
+    - mean_feature_variance
+    - number_of_nonzero_variance_dimensions
+    - unique_row_count
+  rule: "number_of_nonzero_variance_dimensions == 0 or unique_row_count <= 1"
+
+primary_gate:
+  datasets: [MSRCV1, Handwritten_numerals]
+  seeds: [0, 1, 2, 3, 4]
+  paired_cases: 10
+  legacy_to_corrected:
+    delta: "Composite(C3) - Composite(C2)"
+    mean_strictly_greater_than: 0.0
+    minimum_positive_pairs: 6
+  corrected_vs_equal:
+    delta: "Composite(C3) - Composite(C1)"
+    mean_greater_than_or_equal_to: -0.01
+  full_vs_equal:
+    delta: "Composite(C4) - Composite(C1)"
+    mean_greater_than_or_equal_to: -0.01
+  pass_rule: "all three component gates pass"
+
+raw_competitiveness:
+  delta: "Composite(C4) - Composite(C0)"
+  primary_datasets: [MSRCV1, Handwritten_numerals]
+  report_3sources_separately: true
+
+representation_efficiency:
+  datasets:
+    3sources:
+      raw_total_dimension: 10259
+      relation_dimension: 3
+      relation_to_raw_ratio: 0.0002924261623940
+      ball_to_sample_ratio: 0.0059171597633136
+    MSRCV1:
+      raw_total_dimension: 2438
+      relation_dimension: 58
+      relation_to_raw_ratio: 0.0237899917965546
+      ball_to_sample_ratio: 0.0460317460317460
+    Handwritten_numerals:
+      raw_total_dimension: 649
+      relation_dimension: 647
+      relation_to_raw_ratio: 0.9969183359013867
+      ball_to_sample_ratio: 0.0539166666666667
+  compression_rule: "relation_to_raw_ratio < 1"
+
+forbidden_changes:
+  - lower_eta_for_3sources
+  - min_child_size_1_for_3sources
+  - modify_2means_splitter
+  - balanced_kmeans
+  - farthest_point_split
+  - pca
+  - spectral_clustering
+  - multi_granularity

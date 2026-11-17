@@ -53,8 +53,9 @@ redistributing them here would conflict with their terms of use.
 
 ### Synthetic smoke-test fixture
 
-`supplementary_experiments/stage0r_checks/synthetic_001/` holds a small synthetic fixture used
-during development to exercise the pipeline end to end and to regression-test the numerics.
+`datasets/demo_multiview.npz` holds a small synthetic fixture (180 samples, two views of two
+features each, three generative groups) used to exercise the pipeline end to end and to
+regression-test the numerics; `configs/demo.yaml` is its manifest.
 
 **It is a smoke test only.** It is not one of the benchmark datasets, it is not used in any
 reported experiment, and running it must not be presented as reproducing the empirical tables.
@@ -95,11 +96,10 @@ src/bgrfmvc/
     run_*.py              stage runners
     plot_*.py             figure-generation scripts
     export_*.py           export of frozen result tables
-configs/                  YAML configuration files (see Section 6)
-scripts/                  assembly, auditing and consistency-check utilities
+configs/                  YAML configuration files (see Section 6); demo.yaml is the demo manifest
+datasets/                 synthetic smoke-test fixture only (see Section 3)
 tests/                    pytest suite (unit tests for each core component)
 docs/                     method specification, protocol notes, changelog
-external_baselines/       third-party baseline code, kept for reference only
 ```
 
 `src/bgrfmvc/__init__.py` exports only `__version__`. The estimator is imported from the core
@@ -128,7 +128,21 @@ pytest -q
 ```
 
 The suite covers ball construction, boundary relations, fusion, the data loader and the
-label-firewall rule that keeps ground-truth labels out of the representation step.
+label-firewall rule that keeps ground-truth labels out of the representation step. All 63 tests
+pass on a clean install; the tests that consume the frozen benchmark output are not part of this
+snapshot, because that output is not redistributed here.
+
+### End-to-end demo
+
+```bash
+python -m bgrfmvc.experiments.run_unsupervised --dataset demo \
+    --datasets-config configs/demo.yaml --method-config configs/default.yaml \
+    --output-dir results/demo --seed 0
+```
+
+On Windows, `run_demo.bat` performs the same run inside a virtual environment. It writes
+`ball_statistics.csv`, `diagnostics.json`, `predictions.csv`, `runtime.json`, `entropy.npy` and
+`view_weights.npy` to `results/demo/`.
 
 ### Minimal example
 
@@ -206,15 +220,16 @@ If you use this code, please cite the manuscript:
 > Relations. PeerJ Computer Science. (in review)
 
 The method builds on granular-ball computing and on multi-view clustering baselines whose original
-implementations are kept, unmodified, under `external_baselines/`. Each subdirectory retains its
-own licence and citation instructions; cite those works according to their own README files when
-you use them.
+implementations are **not redistributed here**; obtain them from their own public repositories and
+cite those works according to their own instructions. The comparison results themselves are in
+Supplemental Data S1.
 
 ## 9. License & Contribution Guidelines
 
 **License.** The code in this repository is released for academic and research use in connection
-with the associated manuscript. Third-party code under `external_baselines/` remains under its own
-licence and is not covered by any licence granted here; check each subdirectory before reuse.
+with the associated manuscript. Third-party baseline implementations are not redistributed here
+and are therefore not covered by any licence granted in this repository; the published results of
+those baselines are cited in the manuscript and reproduced as records in Supplemental Data S1.
 
 **Contributions.** This is a companion release for a specific manuscript, not a general-purpose
 library, and it is not under active open development. Bug reports and questions about reproducing

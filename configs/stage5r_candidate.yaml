@@ -1,0 +1,27 @@
+experimental_recovery_candidate: true
+method:
+  eta: 0.02
+  min_parent_size: 20
+  min_child_size: 10
+  max_depth: 20
+  tau: 0.5
+  eps: 1.0e-12
+  radius_eps: 1.0e-12
+  relation_floor: 1.0e-12
+  use_ball_reliability: true
+granular_ball:
+  split_n_init: 10
+  split_max_iter: 100
+  split_random_state: 0
+preprocess:
+  standardize: true
+  use_pca: false
+selection:
+  collapse_count: 3
+  total_ball_count: 708
+  selection_rule: >-
+    minimize collapse_count; then minimize total_ball_count; then prefer larger eta;
+    then prefer larger min_child_size
+  labels_loaded: false
+  status: PARTIAL_RECOVERY
+

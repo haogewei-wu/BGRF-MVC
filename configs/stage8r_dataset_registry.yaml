@@ -1,0 +1,123 @@
+registry_version: stage8r_v1
+labels_used_for_k: false
+datasets:
+  3sources:
+    dataset_key: Sources__Consensus One-step Multi-view Subspace Clustering__3sources
+    path: datasets-multiview/Sources/Consensus One-step Multi-view Subspace Clustering/3sources.mat
+    view_keys: [X]
+    label_key: Y
+    transpose_views: false
+    K: 6
+    K_source_type: EXISTING_FROZEN_MANIFEST
+    K_source_reference: configs/datasets.yaml; externally verified publication registry
+    K_source_confidence: EXPLICIT
+  MSRCV1:
+    dataset_key: MSRC__Consensus One-step Multi-view Subspace Clustering__MSRCV1
+    path: datasets-multiview/MSRC/Consensus One-step Multi-view Subspace Clustering/MSRCV1.mat
+    view_keys: [X]
+    label_key: Y
+    transpose_views: false
+    K: 7
+    K_source_type: EXISTING_FROZEN_MANIFEST
+    K_source_reference: configs/datasets.yaml; externally verified publication registry
+    K_source_confidence: EXPLICIT
+  Handwritten_numerals:
+    dataset_key: Handwritten__Consensus One-step Multi-view Subspace Clustering__Handwritten_numerals
+    path: datasets-multiview/Handwritten/Consensus One-step Multi-view Subspace Clustering/Handwritten_numerals.mat
+    view_keys: [X]
+    label_key: Y
+    transpose_views: false
+    K: 10
+    K_source_type: EXISTING_FROZEN_MANIFEST
+    K_source_reference: configs/datasets.yaml; externally verified publication registry
+    K_source_confidence: EXPLICIT
+  100leaves:
+    dataset_key: 100leaves__100leaves
+    path: datasets-multiview/100leaves/100leaves.mat
+    view_keys: [data]
+    label_key: truelabel
+    transpose_views: true
+    K: 100
+    K_source_type: DATASET_NAME_METADATA
+    K_source_reference: canonical dataset name 100leaves; independent K=100 makes stored 64x1600 orientation with n=64 infeasible and resolves to 1600x64
+    K_source_confidence: STRONG_METADATA
+  ALOI-100:
+    dataset_key: ALOI-100__Consensus One-step Multi-view Subspace Clustering__ALOI-100
+    path: datasets-multiview/ALOI-100/Consensus One-step Multi-view Subspace Clustering/ALOI-100.mat
+    view_keys: [X]
+    label_key: Y
+    transpose_views: false
+    K: 100
+    K_source_type: DATASET_NAME_METADATA
+    K_source_reference: canonical benchmark name ALOI-100
+    K_source_confidence: STRONG_METADATA
+  Caltech101-20:
+    dataset_key: Caltech101-20__Consensus One-step Multi-view Subspace Clustering__Caltech101-20
+    path: datasets-multiview/Caltech101-20/Consensus One-step Multi-view Subspace Clustering/Caltech101-20.mat
+    view_keys: [X]
+    label_key: Y
+    transpose_views: false
+    K: 20
+    K_source_type: DATASET_NAME_METADATA
+    K_source_reference: canonical benchmark name Caltech101-20 and independent categories metadata shape 1x20
+    K_source_confidence: EXPLICIT
+  Caltech101-7:
+    dataset_key: Caltech101-Datasets__Low-Rank Tensor Based Proximity Learning__Caltech101-7
+    path: datasets-multiview/Caltech101-Datasets/Low-Rank Tensor Based Proximity Learning/Caltech101-7.mat
+    view_keys: [X]
+    label_key: Y
+    transpose_views: false
+    K: 7
+    K_source_type: DATASET_NAME_METADATA
+    K_source_reference: canonical benchmark name Caltech101-7 and independent categories metadata shape 1x7
+    K_source_confidence: EXPLICIT
+  COIL20:
+    dataset_key: COIL20__Essential Tensor Learning for Multi-view Spectral Clustering__COIL20_3VIEWS
+    path: datasets-multiview/COIL20/Essential Tensor Learning for Multi-view Spectral Clustering/COIL20_3VIEWS.mat
+    view_keys: [X1, X2, X3, X4]
+    label_key: Y
+    transpose_views: false
+    K: 20
+    K_source_type: DATASET_NAME_METADATA
+    K_source_reference: canonical dataset name COIL20; suffix 3VIEWS describes views, not K
+    K_source_confidence: STRONG_METADATA
+  EYaleB10:
+    dataset_key: EYaleB10__Multi-View Spectral Clustering Tailored Tensor Low-Rank Representation__EYaleB10_mtv
+    path: datasets-multiview/EYaleB10/Multi-View Spectral Clustering Tailored Tensor Low-Rank Representation/EYaleB10_mtv.mat
+    view_keys: [X]
+    label_key: gt
+    transpose_views: true
+    K: 10
+    K_source_type: DATASET_NAME_METADATA
+    K_source_reference: canonical benchmark name EYaleB10
+    K_source_confidence: STRONG_METADATA
+  flower17:
+    dataset_key: Flowers__Robust Graph-based Multi-view Clustering__flower17_Kmatrix
+    path: datasets-multiview/Flowers/Robust Graph-based Multi-view Clustering/flower17_Kmatrix.mat
+    view_keys: [KH]
+    label_key: Y
+    transpose_views: false
+    K: 17
+    K_source_type: DATASET_NAME_METADATA
+    K_source_reference: canonical benchmark name flower17; Kmatrix denotes kernel-view container
+    K_source_confidence: STRONG_METADATA
+  20newsgroups:
+    dataset_key: Newsgroups__Multi-view Clustering via Concept Factorization with Local Manifold Fegularization__20newsgroups
+    path: datasets-multiview/Newsgroups/Multi-view Clustering via Concept Factorization with Local Manifold Fegularization/20newsgroups.mat
+    view_keys: [data]
+    label_key: truelabel
+    transpose_views: false
+    K: 20
+    K_source_type: DATASET_NAME_METADATA
+    K_source_reference: canonical dataset name 20newsgroups
+    K_source_confidence: STRONG_METADATA
+  scene15:
+    dataset_key: Scene__Robust Kernelized Multi-View Self-Representations for Clustering by Tensor Multi-Rank Minimization yaleB scene15__scene15
+    path: datasets-multiview/Scene/Robust Kernelized Multi-View Self-Representations for Clustering by Tensor Multi-Rank Minimization yaleB scene15/scene15.mat
+    view_keys: [X1, X2, X3]
+    label_key: gt
+    transpose_views: true
+    K: 15
+    K_source_type: DATASET_NAME_METADATA
+    K_source_reference: canonical benchmark name scene15
+    K_source_confidence: STRONG_METADATA

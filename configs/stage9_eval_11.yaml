@@ -1,0 +1,132 @@
+N_EVAL: 11
+datasets:
+  100leaves:
+    K: 100
+    K_source: canonical dataset name 100leaves; independent K=100 makes stored 64x1600
+      orientation with n=64 infeasible and resolves to 1600x64
+    dataset: 100leaves
+    dataset_family: 100leaves
+    feature_hash: c7931987ed06fd1cd9ddb425e476fc849e39f4dd95a75d10dd08679154c91c59
+    n_samples: 1600
+    n_views: 3
+    path: datasets-multiview/100leaves/100leaves.mat
+    stage8r_selection_hash: 156e948e8e4a4fa979e30935d6f76194585199fa8f6bbea7e207c6cdd31e2989
+    view_dimensions: [64, 64, 64]
+  3sources:
+    K: 6
+    K_source: configs/datasets.yaml; externally verified publication registry
+    dataset: 3sources
+    dataset_family: 3sources
+    feature_hash: cd90601cbdbf28f508ef69086d070c7b785384dc199e123b3cc409c757638038
+    n_samples: 169
+    n_views: 3
+    path: datasets-multiview/Sources/Consensus One-step Multi-view Subspace Clustering/3sources.mat
+    stage8r_selection_hash: 156e948e8e4a4fa979e30935d6f76194585199fa8f6bbea7e207c6cdd31e2989
+    view_dimensions: [3560, 3631, 3068]
+  ALOI-100:
+    K: 100
+    K_source: canonical benchmark name ALOI-100
+    dataset: ALOI-100
+    dataset_family: ALOI-100
+    feature_hash: 5dc8878864a9cff3fd1390a1558f4b30fda62ec97acded0993386bdcacaf3ddd
+    n_samples: 10800
+    n_views: 4
+    path: datasets-multiview/ALOI-100/Consensus One-step Multi-view Subspace Clustering/ALOI-100.mat
+    stage8r_selection_hash: 156e948e8e4a4fa979e30935d6f76194585199fa8f6bbea7e207c6cdd31e2989
+    view_dimensions: [77, 13, 64, 125]
+  COIL20:
+    K: 20
+    K_source: canonical dataset name COIL20; suffix 3VIEWS describes views, not K
+    dataset: COIL20
+    dataset_family: COIL20
+    feature_hash: 43774eb7830ac79e66678bb8467d088dcf86496521124b3d506291521cf91ff3
+    n_samples: 1440
+    n_views: 4
+    path: datasets-multiview/COIL20/Essential Tensor Learning for Multi-view Spectral
+      Clustering/COIL20_3VIEWS.mat
+    stage8r_selection_hash: 156e948e8e4a4fa979e30935d6f76194585199fa8f6bbea7e207c6cdd31e2989
+    view_dimensions: [1024, 944, 4096, 576]
+  Caltech101-20:
+    K: 20
+    K_source: canonical benchmark name Caltech101-20 and independent categories metadata
+      shape 1x20
+    dataset: Caltech101-20
+    dataset_family: Caltech101-20
+    feature_hash: 561658cef41d59eae826d288d27df846410d4fa22ba85641f8c6f14cf8041d4d
+    n_samples: 2386
+    n_views: 6
+    path: datasets-multiview/Caltech101-20/Consensus One-step Multi-view Subspace
+      Clustering/Caltech101-20.mat
+    stage8r_selection_hash: 156e948e8e4a4fa979e30935d6f76194585199fa8f6bbea7e207c6cdd31e2989
+    view_dimensions: [48, 40, 254, 1984, 512, 928]
+  Caltech101-7:
+    K: 7
+    K_source: canonical benchmark name Caltech101-7 and independent categories metadata
+      shape 1x7
+    dataset: Caltech101-7
+    dataset_family: Caltech101-7
+    feature_hash: 55589c5c0c43b4b22c96f2de7a4b4a43531ceb16142942d4d35350b7755ae85a
+    n_samples: 1474
+    n_views: 6
+    path: datasets-multiview/Caltech101-Datasets/Low-Rank Tensor Based Proximity Learning/Caltech101-7.mat
+    stage8r_selection_hash: 156e948e8e4a4fa979e30935d6f76194585199fa8f6bbea7e207c6cdd31e2989
+    view_dimensions: [48, 40, 254, 1984, 512, 928]
+  EYaleB10:
+    K: 10
+    K_source: canonical benchmark name EYaleB10
+    dataset: EYaleB10
+    dataset_family: EYaleB10
+    feature_hash: 10fc23b774ef5e3bf3f9df995610eab20975782da4c67af4b26995194562cf0e
+    n_samples: 640
+    n_views: 3
+    path: datasets-multiview/EYaleB10/Multi-View Spectral Clustering Tailored Tensor
+      Low-Rank Representation/EYaleB10_mtv.mat
+    stage8r_selection_hash: 156e948e8e4a4fa979e30935d6f76194585199fa8f6bbea7e207c6cdd31e2989
+    view_dimensions: [1024, 1239, 256]
+  Handwritten_numerals:
+    K: 10
+    K_source: configs/datasets.yaml; externally verified publication registry
+    dataset: Handwritten_numerals
+    dataset_family: Handwritten_numerals
+    feature_hash: cc562015d755917f6f7e5822574c7a6089b9bafd1292978708cc9c31af021778
+    n_samples: 2000
+    n_views: 6
+    path: datasets-multiview/Handwritten/Consensus One-step Multi-view Subspace Clustering/Handwritten_numerals.mat
+    stage8r_selection_hash: 156e948e8e4a4fa979e30935d6f76194585199fa8f6bbea7e207c6cdd31e2989
+    view_dimensions: [216, 76, 64, 6, 240, 47]
+  MSRCV1:
+    K: 7
+    K_source: configs/datasets.yaml; externally verified publication registry
+    dataset: MSRCV1
+    dataset_family: MSRCV1
+    feature_hash: 78bde72646e5b2d362412b9829eb0679b33d21ed8fc5dbb1e0e797a7ddaf23c0
+    n_samples: 210
+    n_views: 6
+    path: datasets-multiview/MSRC/Consensus One-step Multi-view Subspace Clustering/MSRCV1.mat
+    stage8r_selection_hash: 156e948e8e4a4fa979e30935d6f76194585199fa8f6bbea7e207c6cdd31e2989
+    view_dimensions: [1302, 48, 512, 100, 256, 210]
+  flower17:
+    K: 17
+    K_source: canonical benchmark name flower17; Kmatrix denotes kernel-view container
+    dataset: flower17
+    dataset_family: flower17
+    feature_hash: 24744915eb74590f8058463391e8ccf0bc3568c8334c6eb950379f3a72995059
+    n_samples: 1360
+    n_views: 7
+    path: datasets-multiview/Flowers/Robust Graph-based Multi-view Clustering/flower17_Kmatrix.mat
+    stage8r_selection_hash: 156e948e8e4a4fa979e30935d6f76194585199fa8f6bbea7e207c6cdd31e2989
+    view_dimensions: [1360, 1360, 1360, 1360, 1360, 1360, 1360]
+  scene15:
+    K: 15
+    K_source: canonical benchmark name scene15
+    dataset: scene15
+    dataset_family: scene15
+    feature_hash: 16f8ff6401cb480bb867654b73436ff3c8b619115f922a8a9c2dc9f79d62597a
+    n_samples: 4485
+    n_views: 3
+    path: datasets-multiview/Scene/Robust Kernelized Multi-View Self-Representations
+      for Clustering by Tensor Multi-Rank Minimization yaleB scene15/scene15.mat
+    stage8r_selection_hash: 156e948e8e4a4fa979e30935d6f76194585199fa8f6bbea7e207c6cdd31e2989
+    view_dimensions: [1800, 1180, 1240]
+excluded_stage8r_data_failure: 20newsgroups
+source_selection_hash: 156e948e8e4a4fa979e30935d6f76194585199fa8f6bbea7e207c6cdd31e2989

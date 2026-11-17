@@ -1,0 +1,8 @@
+datasets:
+  demo:
+    enabled: true
+    path: datasets/demo_multiview.npz
+    view_keys: [view1, view2]
+    transpose_views: false
+    n_clusters: 3
+    k_source: "Known synthetic data-generation setting (demo only)"
